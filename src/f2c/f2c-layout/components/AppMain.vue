@@ -23,7 +23,7 @@ export default {
   min-height: calc(100vh - 50px);
   width: calc(100% - 210px);
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   left: 210px;
   top: 50px;
 }

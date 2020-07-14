@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header><navbar /></el-header>
-    <el-container>
+    <el-container class="inner-container">
       <sidebar class="sidebar-container" />
       <app-main />
     </el-container>
@@ -51,6 +51,9 @@ export default {
   @import "~@/styles/mixin.scss";
   @import "~@/styles/variables.scss";
 
+  .el-container{
+    height: calc(100% - 60px) !important;
+  }
   .app-wrapper {
     @include clearfix;
     position: relative;
