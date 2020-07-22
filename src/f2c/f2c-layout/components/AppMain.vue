@@ -1,5 +1,6 @@
 <template>
   <section class="app-main">
+    <toolbar />
     <transition name="fade-transform" mode="out-in">
       <router-view :key="key" />
     </transition>
@@ -7,8 +8,12 @@
 </template>
 
 <script>
+import Toolbar from './Toolbar'
 export default {
   name: 'AppMain',
+  components: {
+    Toolbar
+  },
   computed: {
     key() {
       return this.$route.path

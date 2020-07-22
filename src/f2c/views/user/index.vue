@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="content-toolbar _md _md-toolbar-transitions" />
     <div class="dashboard-container">
       <div class="dashboard-text">name: {{ name }}</div>
     </div>
