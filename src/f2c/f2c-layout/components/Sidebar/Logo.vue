@@ -42,10 +42,10 @@ export default {
 }
 
 .sidebar-logo-container {
+  display: flex;
   position: relative;
   width: 100%;
-  height: 50px;
-  line-height: 50px;
+  line-height: 35px;
   background: #fff;
   text-align: center;
   overflow: hidden;

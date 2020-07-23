@@ -1,5 +1,5 @@
 <template>
-  <div class="f2cToolBar"> <vue-file-toolbar-menu :content="my_menu" /> </div>
+  <div class="mytoolbar"><vue-file-toolbar-menu :content="my_menu" /></div>
 </template>
 <script>
 import VueFileToolbarMenu from 'vue-file-toolbar-menu'
@@ -26,15 +26,18 @@ export default {
   }
 }
 </script>
-<style scoped>
-.f2cToolbar {
+<style lang="scss">
+.mytoolbar {
+    display: flex;
     position: relative;
     width: 100%;
-    height: 50px;
-    line-height: 50px;
+    line-height: 36px;
     background: #fff;
     text-align: center;
     overflow: hidden;
     border-bottom: 1px solid #dad5d5;
+}
+.mytoolbar .bar {
+  text-align: center;
 }
 </style>
