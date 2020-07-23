@@ -1,6 +1,6 @@
 <template>
   <section class="app-main">
-    <toolbar />
+    <toolbar :toolbar-data="toolbarData" />
     <transition name="fade-transform" mode="out-in">
       <router-view :key="key" />
     </transition>
@@ -13,6 +13,23 @@ export default {
   name: 'AppMain',
   components: {
     Toolbar
+  },
+  data() {
+    return {
+      toolbarData: {
+        titleData: {
+          text: '测试标题222',
+          click: () => { alert('test') }
+        },
+        toolDatas: [
+          {
+            text: '新增',
+            icon: 'sentiment_very_satisfied',
+            click: () => { alert('main组建中传递标题参数') }
+          }
+        ]
+      }
+    }
   },
   computed: {
     key() {
