@@ -70,7 +70,8 @@ export const constantRoutes = [
       {
         path: 'table',
         name: '用户',
-        component: () => import('@/views/table/index'),
+        // component: () => import('@/views/table/index'),
+        component: () => import('@/f2c/views/usermanager'),
         meta: { title: '用户', icon: 'table' }
       },
       {

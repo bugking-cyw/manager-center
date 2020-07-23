@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'manager-center',
+  title: 'FIT2CLOUD 云服务平台',
 
   /**
    * @type {boolean} true | false
@@ -12,5 +12,5 @@ module.exports = {
    * @type {boolean} true | false
    * @description Whether show the logo in sidebar
    */
-  sidebarLogo: false
+  sidebarLogo: true
 }

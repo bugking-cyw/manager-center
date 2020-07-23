@@ -96,5 +96,9 @@ export default {
 }
 .mytoolbar .bar {
   text-align: center;
+  .bar-button {
+    min-width: 120px;
+  }
 }
+
 </style>

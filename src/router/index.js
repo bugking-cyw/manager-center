@@ -51,7 +51,7 @@ export const constantRoutes = [
     children: [{
       path: 'dashboard',
       name: 'Dashboard',
-      component: () => import('@/f2c/views/user/index'),
+      component: () => import('@/f2c/views/usermanager/index'),
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
